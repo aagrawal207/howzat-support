@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Howzat's privacy policy: on-device records, optional Game Center, tips and review requests, and data deletion.">
+  <title>Privacy policy | Howzat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Howzat</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Privacy policy for Howzat</h1>
+    <p class="updated">Last updated: September 2026</p>
+
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">The short version</h2>
+      <p>Howzat is a free cricket arcade game with no developer-operated game backend, ads or analytics tracking. Your career scorebook and settings stay on your device. Apple's optional Game Center handles authentication and personal-best rankings; an already signed-in account can submit scores automatically.</p>
+    </section>
+
+    <section aria-labelledby="local-heading">
+      <h2 id="local-heading">What's stored on your device</h2>
+      <p>Howzat saves the following locally using iOS's standard UserDefaults storage:</p>
+      <ul>
+        <li>Your best innings, measured by runs, and the strike rate from that game. A full best-innings scorecard is retained when available, even after it leaves the recent list.</li>
+        <li>Lifetime statistics: games played, total runs and total time played.</li>
+        <li>Detailed career totals for fully recorded completed innings: innings count, cumulative runs, balls and 1/2/4/6-run shot counts.</li>
+        <li>Up to 20 recent completed innings, with a local record identifier, completion date, runs, balls, strike rate, active duration, dismissal reason and shot counts. Scores displays the latest 10. Detailed career totals continue after older entries leave this list.</li>
+        <li>Your settings: sound, haptics, bat size, footwork mode and trackpad corner.</li>
+        <li>Optional tips: verified App Store transaction identifiers and whether each tip is counted or refunded, so a tip is not counted twice. Tips unlock no content or features.</li>
+        <li>Review timing: the latest completed-play date and consecutive-day count, plus the two most recent review-request dates and last requested app version. These records limit how often the app asks for a review.</li>
+      </ul>
+      <p>Earlier installs keep their known lifetime games, runs and best-innings snapshot. Historical balls, dates and shot counts that were not saved are not reconstructed. The scorebook labels partial history rather than treating missing records as zeros.</p>
+      <p>The local scorebook and settings are not uploaded. There is no iCloud sync for these records. Game Center maintains a separate leaderboard score when you use that service.</p>
+    </section>
+
+    <section aria-labelledby="game-center-heading">
+      <h2 id="game-center-heading">Game Center</h2>
+      <p>Howzat uses Apple's Game Center for an optional global, all-time personal-best leaderboard ranked by best-innings runs. If you sign in to Game Center, positive completed innings and your saved local best can be submitted to that leaderboard. Apple handles your Game Center identity.</p>
+      <p>The app checks Game Center authentication at launch without presenting a sign-in sheet. The trophy always opens Scores, where Career and Recent work offline. Sign-in and Apple's full leaderboard require explicit actions in Scores or Settings. The game is fully playable without Game Center.</p>
+      <p>Opening Scores requests a bounded leaderboard refresh when authenticated. The app loads at most the top 100 personal-best entries, including Game Center player identifiers, display names, ranks and scores, plus Apple's total ranked-player count and your separate rank and submitted best. Worldwide displays up to 10 loaded entries. These rankings are held in memory and are not added to your saved career history.</p>
+      <p>The app does not upload innings scorecards, career totals or averages. It has no all-player innings database. A summary of loaded personal-best scores describes only that leaderboard sample, not worldwide innings statistics.</p>
+      <p>Game Center is Apple's service. Apple's handling of your player identity is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+    </section>
+
+    <section aria-labelledby="network-heading">
+      <h2 id="network-heading">Network access</h2>
+      <p>Howzat has no separate game backend or analytics endpoint. Game Center can use the network for authentication at launch, score submission after authentication or a completed game, the bounded Scores refresh and the full leaderboard interface. Apple handles that traffic through GameKit. Apple also handles optional tip purchases and reviews through its services.</p>
+      <p>Cricket recordings are bundled in the app and play offline.</p>
+    </section>
+
+    <section aria-labelledby="tips-heading">
+      <h2 id="tips-heading">Optional tips</h2>
+      <p>Settings offers optional one-time tips through Apple's In-App Purchase system. Apple processes the payment and holds your purchase history under its own privacy policy. Howzat has no purchase server and never sees your payment details.</p>
+      <p>The app records only the verified transaction identifier and its counted or refunded state on your device, and shows a thank-you count from that record. Tipping changes nothing in the game.</p>
+    </section>
+
+    <section aria-labelledby="reviews-heading">
+      <h2 id="reviews-heading">Optional App Store reviews</h2>
+      <p>After five consecutive days with a completed innings and an innings of at least 50 runs, Howzat may request Apple's review sheet when you explicitly return to Main Menu. The request waits two seconds and is cancelled if you start playing, open a sheet or leave the foreground.</p>
+      <p>The timing records stay on your device. Requests are limited to two in a rolling 365 days, at least 120 days apart, and require a newer app version than the last request.</p>
+      <p>Apple decides whether to show the sheet and handles any review you submit. Howzat does not receive your rating or learn whether you submitted one.</p>
+    </section>
+
+    <section aria-labelledby="tracking-heading">
+      <h2 id="tracking-heading">Analytics and third-party services</h2>
+      <p>Howzat includes no analytics, crash-reporting or advertising SDKs and does not track players. The app uses no third-party SDKs or libraries beyond Apple's frameworks. No Howzat account or sign-up is required; optional Game Center sign-in and optional tips are handled by Apple.</p>
+    </section>
+
+    <section aria-labelledby="children-heading">
+      <h2 id="children-heading">Children's privacy</h2>
+      <p>Howzat is a general-audience game. It has no advertising or analytics tracking and does not require a Howzat account. The local records and optional Apple services described in this policy apply to players of any age.</p>
+    </section>
+
+    <section aria-labelledby="deletion-heading">
+      <h2 id="deletion-heading">Deleting your data</h2>
+      <p>Deleting Howzat removes the app's local data from your device, including its scorebook, statistics, settings, tip-count records and review-timing records.</p>
+      <p>Apple manages Game Center records and tip purchase history separately. Deleting Howzat does not delete those Apple-managed records. Use Apple's controls or <a href="https://support.apple.com/">contact Apple</a> for help with those records.</p>
+    </section>
+
+    <section aria-labelledby="website-heading">
+      <h2 id="website-heading">This website and support requests</h2>
+      <p>This support website is hosted on GitHub Pages. It uses no analytics, remote fonts or third-party scripts. GitHub handles website visits and issues you choose to submit under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+      <p>Support issues are public. Share only information you are comfortable making public.</p>
+    </section>
+
+    <section aria-labelledby="changes-heading">
+      <h2 id="changes-heading">Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be posted here with a new "Last updated" date.</p>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>For privacy questions or help with Howzat, <a href="https://github.com/aagrawal207/howzat-support/issues">open an issue in the public Howzat support repository</a>. The <a href="support.html">support page</a> also covers gameplay and common questions.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><a href="index.html">Howzat</a> · <a href="support.html">Support</a> · <a href="https://github.com/aagrawal207/howzat-support/issues">Public support issues</a></p>
+  </footer>
+</body>
+</html>
