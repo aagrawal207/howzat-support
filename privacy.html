@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Howzat's privacy policy: on-device records, optional Game Center leaderboards and achievements, sharing, tips and review requests, and data deletion.">
+  <meta name="description" content="Howzat's privacy policy: on-device records, optional Game Center leaderboards and achievements, anonymous usage analytics, sharing, tips and review requests, and data deletion.">
   <title>Privacy policy | Howzat</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,11 +19,12 @@
   </header>
   <main id="main">
     <h1>Privacy policy for Howzat</h1>
-    <p class="updated">Last updated: October 10, 2026</p>
+    <p class="updated">Last updated: October 11, 2026</p>
 
     <section aria-labelledby="summary-heading">
       <h2 id="summary-heading">The short version</h2>
-      <p>Howzat is a free cricket arcade game with no developer-operated game backend, ads or analytics tracking. Your career scorebook and settings stay on your device. Apple's optional Game Center handles authentication, leaderboards and achievements; an already signed-in account can submit scores and achievement progress automatically.</p>
+      <p>Howzat is a free cricket arcade game with no developer-operated game backend, ads or tracking. Your career scorebook and settings stay on your device. Apple's optional Game Center handles authentication, leaderboards and achievements; an already signed-in account can submit scores and achievement progress automatically.</p>
+      <p>Starting with version 1.7, the app sends anonymous usage summaries, such as how long you play and which screens you open, to help improve the game. They contain no name, account or exact scores, and you can turn them off in Settings.</p>
     </section>
 
     <section aria-labelledby="local-heading">
@@ -41,9 +42,10 @@
         <li>Whether you completed or skipped the first-play pad lesson.</li>
         <li>Optional tips: verified App Store transaction identifiers and whether each tip is counted or refunded, so a tip is not counted twice. Tips unlock no content or features.</li>
         <li>Review timing: the latest completed-play date and consecutive-day count, plus the two most recent review-request dates and last requested app version. These records limit how often the app asks for a review.</li>
+        <li>Usage analytics (version 1.7 and later), unless you turn them off: a random install identifier, the date analytics first started on this device, and at most 64 summaries waiting to be sent.</li>
       </ul>
       <p>Earlier installs keep their known lifetime games, runs and best-innings snapshot. Historical balls, dates, shot counts and bowling detail that were not saved are not reconstructed. The scorebook labels partial history rather than treating missing records as zeros. Abandoned innings are not added to bowler history.</p>
-      <p>The local scorebook and settings are not uploaded. There is no iCloud sync for these records. Game Center maintains a separate leaderboard score when you use that service.</p>
+      <p>The local scorebook and settings are not uploaded. There is no iCloud sync for these records. Game Center maintains a separate leaderboard score when you use that service. Anonymous usage summaries contain only rough ranges, as described under Analytics.</p>
     </section>
 
     <section aria-labelledby="game-center-heading">
@@ -65,7 +67,7 @@
 
     <section aria-labelledby="network-heading">
       <h2 id="network-heading">Network access</h2>
-      <p>Howzat has no separate game backend or analytics endpoint. Game Center can use the network for authentication at launch, score and achievement submission after authentication or a completed game, the bounded Scores refresh and the full leaderboard interface. Apple handles that traffic through GameKit. Apple also handles optional tip purchases and reviews through its services.</p>
+      <p>Howzat has no separate game backend. Game Center can use the network for authentication at launch, score and achievement submission after authentication or a completed game, the bounded Scores refresh and the full leaderboard interface. Apple handles that traffic through GameKit. Apple also handles optional tip purchases and reviews through its services. Unless turned off, usage summaries go to TelemetryDeck when the app opens, returns to the foreground or moves to the background.</p>
       <p>Cricket recordings are bundled in the app and play offline.</p>
     </section>
 
@@ -88,18 +90,35 @@
     </section>
 
     <section aria-labelledby="tracking-heading">
-      <h2 id="tracking-heading">Analytics and third-party services</h2>
-      <p>Howzat includes no analytics, crash-reporting or advertising SDKs and does not track players. The app uses no third-party SDKs or libraries beyond Apple's frameworks. No Howzat account or sign-up is required; optional Game Center sign-in and optional tips are handled by Apple.</p>
+      <h2 id="tracking-heading">Analytics</h2>
+      <p>Starting with version 1.7, Howzat sends anonymous usage summaries to <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a>, a privacy-focused analytics service, to learn which parts of the game people use. Settings &rsaquo; Privacy &rsaquo; Share anonymous usage turns this off at any time. Turning it off deletes the install identifier and anything not yet sent. Earlier versions send no analytics.</p>
+      <p>What is sent:</p>
+      <ul>
+        <li>Rough session length and active playing time, in ranges such as "3-10 minutes".</li>
+        <li>Counts from that session: innings played, how they ended, and whether you opened Settings, Scores sections, look lists, the tip jar or the share sheet.</li>
+        <li>Your best runs that session and in your career, only as ranges such as "25-49".</li>
+        <li>Your current game settings and chosen looks, which settings you change, and whether the pad lesson was completed or skipped.</li>
+        <li>Lifetime milestones such as your 10th innings, with rough days since you first opened the app.</li>
+        <li>App version, iPhone model and iOS version.</li>
+      </ul>
+      <p>Each summary carries a random identifier created on this device and hashed before sending. It is not your name, Apple Account, Game Center identity, advertising identifier or vendor identifier. Nothing is linked to your identity, and nothing is used for tracking or advertising. Exact scores, scorecards, bowler analysis, location and contacts are never sent.</p>
+      <p>Howzat includes no crash-reporting or advertising SDKs. Apple separately provides aggregate App Store and crash statistics from devices whose owners chose to share them with developers.</p>
+    </section>
+
+    <section aria-labelledby="third-party-heading">
+      <h2 id="third-party-heading">Third-party services</h2>
+      <p>TelemetryDeck receives the anonymous usage summaries above; its <a href="https://telemetrydeck.com/privacy/">privacy policy</a> covers how it stores them. Howzat includes no third-party SDKs or libraries: it sends the summaries with Apple's own networking. No Howzat account or sign-up is required; optional Game Center sign-in and optional tips are handled by Apple.</p>
     </section>
 
     <section aria-labelledby="children-heading">
       <h2 id="children-heading">Children's privacy</h2>
-      <p>Howzat is a general-audience game. It has no advertising or analytics tracking and does not require a Howzat account. The local records and optional Apple services described in this policy apply to players of any age.</p>
+      <p>Howzat is a general-audience game. It has no advertising or tracking and does not require a Howzat account. It collects no personal information from anyone; usage summaries are anonymous and can be turned off. The local records, analytics and optional Apple services described in this policy apply to players of any age.</p>
     </section>
 
     <section aria-labelledby="deletion-heading">
       <h2 id="deletion-heading">Deleting your data</h2>
       <p>Deleting Howzat removes the app's local data from your device, including its scorebook, statistics, weekly best, achievement progress, earned looks, settings, tip-count records and review-timing records.</p>
+      <p>Turning off Share anonymous usage, or deleting the app, removes the analytics identifier and any unsent summaries. Summaries already sent are anonymous and cannot be traced back to you, so they cannot be looked up or deleted for a particular person.</p>
       <p>Apple manages Game Center records, including leaderboard scores and achievements, and tip purchase history separately. Deleting Howzat does not delete those Apple-managed records. Use Apple's controls or <a href="https://support.apple.com/">contact Apple</a> for help with those records.</p>
     </section>
 
