@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Howzat's privacy policy: on-device records, the optional iCloud copy of your progress, optional Game Center leaderboards and achievements, anonymous usage analytics, sharing, tips and review requests, and data deletion.">
+  <meta name="description" content="Howzat's privacy policy: on-device records, the optional iCloud copy of your progress, optional Game Center leaderboards and achievements, anonymous usage analytics, the feedback email, sharing, tips and review requests, and data deletion.">
   <title>Privacy policy | Howzat</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +19,7 @@
   </header>
   <main id="main">
     <h1>Privacy policy for Howzat</h1>
-    <p class="updated">Last updated: October 23, 2026</p>
+    <p class="updated">Last updated: October 25, 2026</p>
 
     <section aria-labelledby="summary-heading">
       <h2 id="summary-heading">The short version</h2>
@@ -35,7 +35,7 @@
         <li>Your top five innings by runs.</li>
         <li>Lifetime statistics: games played, total runs and total time played.</li>
         <li>Detailed career totals for fully recorded completed innings: innings count, cumulative runs, balls and 1/2/4/6-run shot counts.</li>
-        <li>Per-bowler balls, runs, dismissals and shot outcomes for recorded innings. First-bounce length is grouped into 24 bands along the game's pitch; deliveries without a recorded bounce are counted separately. Cumulative bowler totals remain available after older scorecards leave the recent list.</li>
+        <li>Per-bowler balls, runs, dismissals and shot outcomes for recorded innings. First-bounce length is grouped into 24 bands along the game's pitch; deliveries without a recorded bounce are counted separately. The pitch heatmap uses these on-device totals; it does not record an across-pitch position. Cumulative bowler totals remain available after older scorecards leave the recent list.</li>
         <li>Up to 20 recent completed innings, with a local record identifier, completion date, runs, balls, strike rate, active duration, dismissal reason and shot counts. Scores displays the latest 10. Detailed career totals continue after older entries leave this list.</li>
         <li>This week's best innings (runs and strike rate). A new week starts every Monday at 00:00 UTC.</li>
         <li>Achievement progress: which of the 12 achievements you have earned, your century count and how many weeks you have scored in. It also records which career goals you have reached and which new looks you have already seen. Kit pieces unlock from these on-device achievements and career goals.</li>
@@ -43,6 +43,7 @@
         <li>Your settings: bat size, Left/Right playing side, footwork mode, pause after boundaries, the Effects and Crowd sound switches, music volume, the chosen music track and which tracks are in the shuffle, and haptics.</li>
         <li>Your player: face, skin tone, hair style and colour, facial hair and headwear, plus the kit, pads, gloves and bat design you wear.</li>
         <li>Whether you completed or skipped the first-play pad lesson.</li>
+        <li>Last week's top 10 (version 1.13 and later): only which week the card last appeared, so it shows at most once a week. The names and ranks on it are not stored.</li>
         <li>Optional tips: verified App Store transaction identifiers and whether each tip is counted or refunded, so a tip is not counted twice. Tips unlock no content or features.</li>
         <li>Review timing: the latest completed-play date and consecutive-day count, plus the two most recent review-request dates and last requested app version. These records limit how often the app asks for a review.</li>
         <li>Usage analytics (version 1.7 and later), unless you turn them off: a random install identifier, the date analytics first started on this device, and at most 64 summaries waiting to be sent.</li>
@@ -64,7 +65,7 @@
       </ul>
       <p>It does not include your other settings. Bat size, playing side, footwork, sound, music, haptics, pause after boundaries and the pad lesson stay on each device. An unfinished innings is never copied to iCloud.</p>
       <p>Only your devices signed in to your Apple Account can read this copy. The developer has no access to it, and no Howzat server receives it. Apple stores it under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
-      <p>To keep progress on this device only, turn off iCloud for Howzat in the iOS Settings app, or sign out of iCloud. Settings &rsaquo; Career in Howzat then reads "iCloud is off; progress is saved on this device." The game works the same either way.</p>
+      <p>To keep progress on this device only, turn off iCloud for Howzat in the iOS Settings app, or sign out of iCloud. The iCloud note under Settings &rsaquo; Career in Howzat then reads "Off. Progress is saved on this device." The game works the same either way.</p>
     </section>
 
     <section aria-labelledby="game-center-heading">
@@ -79,21 +80,27 @@
       </ul>
       <p>When iCloud brings in progress from your other devices, Howzat submits only the figures that progress raised, and reports merged achievements without a banner.</p>
       <p>Apple handles your Game Center identity.</p>
-      <p>The app checks Game Center authentication at launch without presenting a sign-in sheet. The trophy always opens Scores, where Career, Bowlers and Recent work offline. Sign-in and Apple's full leaderboard require explicit actions in Scores or Settings. The game is fully playable without Game Center.</p>
+      <p>The app checks Game Center authentication at launch without presenting a sign-in sheet. The trophy always opens Scores, where Career, Bowlers and Recent work offline. Sign-in and Apple's Game Center dashboard require explicit actions in Scores or Settings. The game is fully playable without Game Center.</p>
       <p>Opening Scores requests a bounded leaderboard refresh when authenticated. The app loads at most the top 100 entries of the selected leaderboard, including Game Center player identifiers, display names, ranks and scores, plus Apple's total ranked-player count and your separate rank and submitted best. Worldwide displays up to 10 loaded entries. These rankings are held in memory and are not added to your saved career history.</p>
+      <p>Starting with version 1.13, once a week, when you are already signed in, the first main menu of a new week (Monday 00:00 UTC) can load the previous week's top 10 from the weekly leaderboard, with the same kinds of entries and your own rank and score for that week. The card never presents a sign-in sheet. It is shown once, and the names are shown from Game Center and held in memory only: they are not stored or sent anywhere. The app stores just which week it last showed the card, on this device.</p>
       <p>Apart from the scores and achievement progress listed above, the app does not upload innings scorecards, bowler analysis or other career totals. It has no all-player innings database. A summary of loaded personal-best scores describes only that leaderboard sample, not worldwide innings statistics.</p>
       <p>Game Center is Apple's service. Apple's handling of your player identity is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
     </section>
 
     <section aria-labelledby="network-heading">
       <h2 id="network-heading">Network access</h2>
-      <p>Howzat has no separate game backend. Game Center can use the network for authentication at launch, score and achievement submission after authentication or a completed game, the bounded Scores refresh and the full leaderboard interface. Apple handles that traffic through GameKit. Apple also handles optional tip purchases and reviews through its services. When iCloud is on, Apple's iCloud key-value storage carries the progress copy between your devices. Unless turned off, usage summaries go to TelemetryDeck when the app opens, returns to the foreground or moves to the background.</p>
+      <p>Howzat has no separate game backend. Game Center can use the network for authentication at launch, score and achievement submission after authentication or a completed game, the bounded Scores refresh, the weekly last-week top 10 and the Game Center dashboard. Apple handles that traffic through GameKit. Apple also handles optional tip purchases and reviews through its services. When iCloud is on, Apple's iCloud key-value storage carries the progress copy between your devices. Unless turned off, usage summaries go to TelemetryDeck when the app opens, returns to the foreground or moves to the background.</p>
       <p>Cricket recordings are bundled in the app and play offline. Background music is generated on the device and needs no network.</p>
+    </section>
+
+    <section aria-labelledby="feedback-heading">
+      <h2 id="feedback-heading">Feedback email</h2>
+      <p>Starting with version 1.13, Settings &rsaquo; About &rsaquo; Send Feedback opens a draft email to the developer in your own mail app. The draft includes the app version, build number, device model and iOS version so problems are easier to fix; you can edit or remove them. Nothing is sent unless you send the email yourself. If no mail app is available, the app shows the developer's email address instead, with an option to copy it.</p>
     </section>
 
     <section aria-labelledby="share-heading">
       <h2 id="share-heading">Sharing a scorecard</h2>
-      <p>After an innings, Share creates an image of that scorecard on your device and opens Apple's share sheet. The image shows only that innings' runs, balls, strike rate, dismissal, shot counts and any new-best badge. Howzat sends it nowhere itself; it goes only where you choose to share it.</p>
+      <p>After an innings, Share creates an image of that scorecard on your device and opens Apple's share sheet. The image shows only that innings' runs, balls, strike rate, time at the crease, how you were out and, when known, the type of bowler who took the wicket, shot counts, and any new-best or new-best-this-week badge. It carries no name, Game Center identity or device identifier. Howzat sends it nowhere itself; it goes only where you choose to share it.</p>
     </section>
 
     <section aria-labelledby="tips-heading">
@@ -116,13 +123,14 @@
       <ul>
         <li>Rough session length and active playing time, in ranges such as "3-10 minutes".</li>
         <li>Counts from that session: innings played, how they ended, how many reached 200 and 300 runs, and whether you opened Settings, Scores sections, look lists, the tip jar or the share sheet.</li>
+        <li>Whether last week's top 10 appeared that session (version 1.13 and later), and if so only whether your own row was in the ten, ranked outside it, or absent. The names, ranks and runs on the card are never sent.</li>
         <li>Your best runs that session and in your career, only as ranges such as "25-49".</li>
-        <li>A short summary of each finished innings, in ranges (runs, balls, length, boundaries, how often the bat met the ball) with how it ended, the type of ball that got you out and whether you then replayed, went to the menu or left the app; plus which screen you were on when you left, and a rough frame rate.</li>
+        <li>A short summary of each finished innings, in ranges (runs, balls, length, boundaries, how often the bat met the ball) with how it ended, the type of ball that got you out and whether you then replayed, went to the menu or left the app; plus which screen you were on when you left, a rough frame rate and a rough count of stutters.</li>
         <li>Your current game settings and chosen looks, which settings you change, and whether the pad lesson was completed or skipped.</li>
-        <li>Lifetime milestones such as your 10th innings, with rough days since you first opened the app.</li>
+        <li>Lifetime figures in ranges, such as innings played, best runs and looks earned, whether you have seen the pad lesson and whether you are signed in to Game Center; and milestones such as your 10th innings, with rough days since you first opened the app.</li>
         <li>App version, iPhone or iPad model and iOS version.</li>
       </ul>
-      <p>Each summary carries a random identifier created on this device and hashed before sending. It is not your name, Apple Account, Game Center identity, advertising identifier or vendor identifier. Nothing is linked to your identity, and nothing is used for tracking or advertising. Exact scores, scorecards, bowler analysis, location and contacts are never sent. Version 1.12 adds nothing to these summaries: the iCloud copy and the saved innings are not part of them, and the iCloud install identifier is never sent.</p>
+      <p>Each summary carries a random identifier created on this device and hashed before sending. It is not your name, Apple Account, Game Center identity, advertising identifier or vendor identifier. Nothing is linked to your identity, and nothing is used for tracking or advertising. Exact scores, scorecards, bowler analysis, location and contacts are never sent. Version 1.12 added nothing to these summaries: the iCloud copy and the saved innings are not part of them, and the iCloud install identifier is never sent. Version 1.13 adds only the last-week top 10 value above; the feedback email is not part of the summaries.</p>
       <p>Howzat includes no crash-reporting or advertising SDKs. Apple separately provides aggregate App Store and crash statistics from devices whose owners chose to share them with developers.</p>
     </section>
 
@@ -133,15 +141,15 @@
 
     <section aria-labelledby="children-heading">
       <h2 id="children-heading">Children's privacy</h2>
-      <p>Howzat is a general-audience game. It has no advertising or tracking and does not require a Howzat account. It collects no personal information from anyone; usage summaries are anonymous and can be turned off. The local records, analytics and optional Apple services described in this policy apply to players of any age.</p>
+      <p>Howzat is a general-audience game rated 4+, with no objectionable content. It has no advertising or tracking and does not require a Howzat account. It collects no personal information from anyone; usage summaries are anonymous and can be turned off. The local records, analytics and optional Apple services described in this policy apply to players of any age.</p>
     </section>
 
     <section aria-labelledby="deletion-heading">
       <h2 id="deletion-heading">Deleting your data</h2>
-      <p>Deleting Howzat removes the app's local data from your device, including its scorebook, statistics, weekly best, achievement progress, earned looks, saved innings, settings, tip-count records and review-timing records.</p>
+      <p>Deleting Howzat removes the app's local data from your device, including its scorebook, statistics, weekly best, achievement progress, earned looks, saved innings, settings, tip-count records, review-timing records and the record of when last week's top 10 last appeared.</p>
       <p>Deleting Howzat does not delete the iCloud copy of your progress. If you install Howzat again on a device signed in to the same Apple Account with iCloud on, your progress comes back. Apple manages iCloud storage; use Apple's iCloud controls or <a href="https://support.apple.com/">contact Apple</a> for help with it.</p>
       <p>Turning off Share anonymous usage, or deleting the app, removes the analytics identifier and any unsent summaries. Summaries already sent are anonymous and cannot be traced back to you, so they cannot be looked up or deleted for a particular person.</p>
-      <p>Apple manages Game Center records, including leaderboard scores and achievements, and tip purchase history separately. Deleting Howzat does not delete those Apple-managed records. Use Apple's controls or <a href="https://support.apple.com/">contact Apple</a> for help with those records.</p>
+      <p>Apple manages Game Center records, including leaderboard scores and achievements, and tip purchase history separately. Deleting Howzat does not delete those Apple-managed records. You can manage Game Center data in your device's Game Center settings; otherwise, use Apple's controls or <a href="https://support.apple.com/">contact Apple</a> for help with those records.</p>
     </section>
 
     <section aria-labelledby="website-heading">
